@@ -32,3 +32,25 @@ readMoreButton.addEventListener('click', function() {
 });
 
 */
+
+document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-container nav ul");
+
+        hamburger.addEventListener("click", function () {
+            navLinks.classList.toggle("show");
+        });
+    });
+
+function expandImage(imageSrc) {
+        const overlay = document.getElementById("overlay");
+        const expandedImage = document.getElementById("expanded-image");
+
+        expandedImage.src = imageSrc;
+        overlay.style.display = "flex";
+    }
+
+    function closeOverlay() {
+        const overlay = document.getElementById("overlay");
+        overlay.style.display = "none";
+    }
