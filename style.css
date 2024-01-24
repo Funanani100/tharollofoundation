@@ -25,6 +25,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 999;
+    height: 100px;
 }
 
 .logo {
@@ -45,10 +46,11 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: large;
 }
 
 nav ul li a:hover {
-    color: #aaa;
+    color: #06ccf9;
 }
 
 nav ul li ul {
@@ -191,13 +193,7 @@ footer {
   color: #F7F7F7;
 }
 
-.name{
-    font-style: oblique;
-    font-weight: bolder;
-    font-size: x-large;
-}
-
-.f{
+.name , .f {
     font-style: oblique;
     font-weight: bolder;
     font-size: x-large;
@@ -282,6 +278,20 @@ body {
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
+    }
+
+    header {
+        height: auto;
+    }
+    
+    .f {
+        text-align: center;
+        margin-left: 100%
+    }
+
+    .name {
+        text-align: center;
+        margin-right: 30%;
     }
 
     .feature {
